@@ -1,0 +1,21 @@
+.main {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 42px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #242EDB;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-right: 6px;
+}

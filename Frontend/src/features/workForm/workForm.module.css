@@ -1,0 +1,76 @@
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content {
+  width: 500px;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formSection {
+  margin-bottom: 1rem;
+}
+
+.input_field {
+    width: 400px; /* Задаем ширину */
+    height: 45px; /* Задаем высоту */
+    font-size: 18px; /* Задаем размер шрифта */
+    padding: 10px; /* Внутренние отступы для красоты */
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Чтобы ширина включала padding и border */
+}
+
+/* Стиль для фокуса */
+.input_field:focus {
+    outline: none;
+    border-color: #007bff; /* Цвет рамки при фокусе */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.error_message {
+  color: red;
+  font-size: 0.875rem;
+  /* Немного уменьшим текст */
+  margin-top: 4px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.submit {
+  backgroundColor: '#4CAF50';
+  color: 'white';
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  text-align: center;
+}

@@ -1,0 +1,78 @@
+/* .main {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 42px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #404043;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+} */
+
+/* Button.css */
+
+/* Базовые стили для всех кнопок */
+.custom_button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    text-align: center;
+}
+
+/* Общие ховер-эффекты */
+.custom_button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.custom_button:active {
+    transform: translateY(0);
+}
+
+/* Варианты цветов */
+.custom_button--primary {
+    background-color: #007bff; /* Синий */
+    color: white;
+}
+.custom_button--primary:hover {
+    background-color: #0056b3;
+}
+
+.custom_button--secondary {
+    background-color: #6c757d; /* Серый */
+    color: white;
+}
+.custom_button--secondary:hover {
+    background-color: #545b62;
+}
+
+.custom_button--success {
+    background-color: #28a745; /* Зеленый */
+    color: white;
+}
+.custom_button--success:hover {
+    background-color: #1e7e34;
+}
+
+.custom_button--danger {
+    background-color: #dc3545; /* Красный */
+    color: white;
+}
+.custom_button--danger:hover {
+    background-color: #c82333;
+}
+
+.custom_button--warning {
+    background-color: #ffc107; /* Желтый */
+    color: #212529; /* Темный текст для контраста */
+}
+.custom_button--warning:hover {
+    background-color: #e0a800;
+}
