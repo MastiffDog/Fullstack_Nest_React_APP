@@ -9,9 +9,11 @@ import {
   ParseIntPipe,Query
 } from '@nestjs/common';
 import { WorkService } from './work.service';
-import { CreateWorkDto } from './dto/create-work.dto';
+import { CreateWorkDto } from './dto/create-work.dto'; // Импортируем DTO
 import { DeleteIdsDto } from './dto/delete-ids.dto';
 
+// Декоратор @Controller('works') задает базовый путь для всех маршрутов этого класса.
+// Например, метод create() будет доступен по адресу POST /works
 @Controller('works')
 export class WorkController {
   constructor(private readonly workService: WorkService) {}

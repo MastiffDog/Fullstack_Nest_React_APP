@@ -84,5 +84,5 @@ export class WorkService {
     // Используем опциональную последовательность и нулевое слияние.
     // Если deletedCount.affected будет null или undefined, вернется 0.
     return deletedCount.affected ?? 0; 
-  }
+  }  
 }
