@@ -1,7 +1,7 @@
 {
-  "name": "IT-GURU-test",
+  "name": "REACT_FRONT_STROY_APP",
   "version": "1.0.0",
-  "description": "Test react applicatin - products table with auth and forms",
+  "description": "Test react applicatin - works table and forms",
   "main": "src/index.tsx",
   "author": "Petr <offroad-runner@bk.ru>",
   "scripts": {

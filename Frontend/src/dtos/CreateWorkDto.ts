@@ -1,4 +1,3 @@
-// src/dtos/CreateWorkDto.ts
 export interface CreateWorkDto {
   executor: string;
   dimension_type: string;

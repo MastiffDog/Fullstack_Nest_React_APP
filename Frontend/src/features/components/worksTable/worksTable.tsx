@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { Work } from '../../../../entities/product/productModel';
+import { Work } from 'src/entities/work/workModel';
 import styles from './workstable.module.css';
 import { CustomButton } from 'src/shared/buttons/customButton';
 

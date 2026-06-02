@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import WorkService from 'src/features/productList/services/WorkService';
+import WorkService from 'src/features/services/workService';
 import styles from './workForm.module.css';
 import { CustomButton } from 'src/shared/buttons/customButton';
 

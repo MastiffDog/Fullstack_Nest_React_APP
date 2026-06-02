@@ -11,10 +11,10 @@ const AppRoutes: React.FC = () => {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainDashBoard/>} />
+          <Route path="/" element={<MainDashBoard />} />
           <Route
             path="*"
-            element={<NotFound/>}
+            element={<NotFound />}
           />
         </Routes>
       </BrowserRouter>

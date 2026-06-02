@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import WorkService from 'src/features/productList/services/WorkService';
+import WorkService from 'src/features/services/workService';
 import WorkForm from 'src/features/workForm/workForm';
-import { WorkListPanelComponent } from 'src/features/productList/components/workListPanel/workListPanel';
-import { WorksTableComponent } from 'src/features/productList/components/worksTable/worksTable';
-import { ConfirmModalWindow } from 'src/features/productList/components/confirmModal/confirmModal';
-import { Work } from 'src/entities/product/productModel';
+import { WorkListPanelComponent } from 'src/features/components/workListPanel/workListPanel';
+import { WorksTableComponent } from 'src/features/components/worksTable/worksTable';
+import { ConfirmModalWindow } from 'src/features/components/confirmModal/confirmModal';
+import { Work } from 'src/entities/work/workModel';
 import { ICreateWork } from 'src/features/workForm/workForm';
 import { ToastNotification } from 'src/shared/toast';
 import styles from './mainDashBoard.module.css';
@@ -26,7 +26,6 @@ export const MainDashBoard: React.FC = () => {
   const [toastMessage, setToastMessage] = useState('');
   
   const refreshData = async () => { 
-    console.log("RefreshData...");
     try {
       const data = await WorkService.getAllWorks();
       setWorks(data);
@@ -80,6 +79,13 @@ export const MainDashBoard: React.FC = () => {
   }, [selectedIds, refreshData, handleConfirmVisibility]);
  
   const handleCloseWorkForm = () => {
+    setFormData({
+      executor: '',
+      dimension_type: '',
+      dimension_value: 0,
+      work: '',
+      date: ''
+    });
     refreshData();
     setFormVisibility(false);
   }

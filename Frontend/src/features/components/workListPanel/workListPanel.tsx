@@ -1,7 +1,7 @@
 import React from 'react';
 import { ButtonWithIcon } from 'src/shared/buttons/iconButton';
 import { AddButton } from 'src/shared/buttons/addButton';
-import refresh from '../../../../shared/icons/refresh.svg';
+import refresh from '../../../shared/icons/refresh.svg';
 import styles from './worklistpanel.module.css';
 import { RemoveSelectedButton } from 'src/shared/buttons/removeSelectedButton';
 
