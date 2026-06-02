@@ -1,5 +1,3 @@
-// src/work/work.controller.ts
-
 import {
   Controller,
   Get,
@@ -11,11 +9,9 @@ import {
   ParseIntPipe,Query
 } from '@nestjs/common';
 import { WorkService } from './work.service';
-import { CreateWorkDto } from './dto/create-work.dto'; // Импортируем DTO
+import { CreateWorkDto } from './dto/create-work.dto';
 import { DeleteIdsDto } from './dto/delete-ids.dto';
 
-// Декоратор @Controller('works') задает базовый путь для всех маршрутов этого класса.
-// Например, метод create() будет доступен по адресу POST /works
 @Controller('works')
 export class WorkController {
   constructor(private readonly workService: WorkService) {}
@@ -82,8 +78,6 @@ export class WorkController {
    */
   @Post('delete-many')
   async removeMany(@Body() deleteIdsDto: DeleteIdsDto) { 
-    // Теперь TypeScript гарантирует, что deleteIdsDto - это объект,
-    // прошедший валидацию. Свойство ids гарантированно является number[].
     const count = await this.workService.deleteMany(deleteIdsDto);
     return { message: 'Успешно удалено', deletedCount: count };
   }

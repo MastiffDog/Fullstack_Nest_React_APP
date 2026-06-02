@@ -85,5 +85,4 @@ export class WorkService {
     // Если deletedCount.affected будет null или undefined, вернется 0.
     return deletedCount.affected ?? 0; 
   }
-  
 }
